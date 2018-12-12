@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+input,
+textarea,
+button,
+select, img, span,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+   outline: 0;
+}
+
+/*Fonts from external source*/
+@font-face {
+  src: url(C:\Users\Home\AppData\Local\Temp\atom-118019-14536-1ea9572.rtm9ozuxr\league-spartan.zip\LeagueSpartan-Bold.otf);
+  font-family: League Spartan;
+}
+/*Fonts from external source*/
+
+
+
+/*Navigation Bar*/
+.logo {
+  width: 240px;
+  height: 53px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('https://cdn.discordapp.com/attachments/461704091907915778/511756632422744066/packfindrlogoSMOL.PNG');
+  foreground-size: cover;
+  foreground-attachment: fixed;
+  foreground-repeat: no-repeat;
+  foreground-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  /*margin-top: 15px;*/
+  font-size: 0px;
+  margin-left: 0px;
+}
+
+.logo h1 {
+   font-family: Segoe UI, Helvetica, calibri, serif;
+   margin-top: 4px;
+}
+
+#menu {
+  position: absolute;
+  right: 20px;
+  top: 17px;
+  cursor: pointer;
+  display: none;
+}
+
+#close {
+   position: absolute;
+   top: 17px;
+   right: 20px;
+   cursor: pointer;
+   display: none;
+}
+
+nav ul {
+  display: block;
+  float: right;
+  overflow: hidden;
+  margin: 7px 0;
+  margin-right: 10px;
+}
+
+nav ul li {
+  list-style-type: none;
+  float: left;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Roboto', Helvetica, sans-serif;
+  font-size: 17px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+@media screen and (max-width: 617px) {
+  .logo {
+    margin-top: 7px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+  }
+   .logo h1 {
+      position: relative;
+      margin-bottom: 10px;
+   }
+  nav {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+  }
+  nav ul {
+    padding-top: 20px;
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  .nav-expanded {
+    display: block;
+  }
+  nav ul li {
+    float: none;
+    border-bottom: 2px solid #D8D8D8;
+  }
+  nav ul li:last-child {
+    border-bottom: none;
+  }
+  #menu {
+    display: block;
+  }
+}
+/*Navigation Bar*/
+
+
+
+/*Hero Image*/
+header {
+  width: 100vw;
+  height: 85vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url('https://content.presspage.com/uploads/1093/1920_12441.jpg?10000');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-text {
+  width: 500px;
+  text-align: center;
+}
+
+.text1 {
+  width: 1000px;
+  height: auto;
+  text-align: left;
+  float:none;
+  color: white;
+}
+
+.survey {
+  column-count: 3;
+  width: 600px;
+  height: auto;
+  text-align: left;
+  float:none;
+  color: white;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-family: League Spartan, sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: white;
+}
+
+#photography {
+  font-size: 36px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-bottom: 0px;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: white;
+  font-size: 12px;
+}
+
+header p1 {
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: white;
+  font-size: 18px;
+}
+
+header button {
+  border: 2px solid white;
+  color: white;
+  font-family: 'Roboto', Segoe UI, calibri, Helvetica, serif;
+  padding: 10px;
+  font-size: 18px;
+  width: 160px;
+  border-radius: 500px;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+header button:hover, button:active {
+  background-color: white;
+  color: black;
+}
+
+@media screen and (max-width: 676px) {
+  .header-text {
+    width: 95%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 601px) {
+  #photography {
+    font-size: 45px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  header p {
+    font-size: 15px;
+    width: 85%;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  header button {
+    font-size: 16px;
+    width: 140px;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  #photography {
+    font-size: 35px;
+  }
+  header h1 {
+    font-size: 28px;
+  }
+}
+/*Hero Image*/
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    width: 1000px;
+    border-radius: 5px;
+    /*background-color: #f2f2f2;*/
+    padding: 20px;
+}
